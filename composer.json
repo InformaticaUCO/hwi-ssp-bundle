@@ -1,0 +1,31 @@
+{
+    "name": "informaticauco/hwi-ssp-bundle",
+    "description": "Custom SimpleSAMLphp module for HWIOAuthBundle",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergio Gómez",
+            "email": "sergio@uco.es"
+        }
+    ],
+    "require": {
+        "friendsofsymfony/user-bundle": "^2.1",
+        "hwi/oauth-bundle": "^0.6.1",
+        "php-http/guzzle6-adapter": "^1.1",
+        "php-http/httplug-bundle": "^1.9",
+        "spomky-labs/jose": "^7.0",
+        "symfony/http-kernel": "^3.4|^4.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "InformaticaUco\\Bundle\\HwiSspBundle\\": "src/"
+        }
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.10"
+    }
+}
