@@ -5,10 +5,10 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="InformaticaUco\Bundle\HwiSspBundle\Security\Core\User\OAuth2SimpleSAMLphpUserProvider">
+        <service id="informatica_uco.hwi.user_provider" class="InformaticaUco\Bundle\HwiSspBundle\Security\Core\User\OAuth2SimpleSAMLphpUserProvider">
             <argument type="service" id="fos_user.user_manager.default" />
             <argument type="collection">
-                <argument type="string" id="ssp">ssp_id</argument>
+                <argument type="string" key="ssp">ssp_id</argument>
             </argument>
         </service>
     </services>
